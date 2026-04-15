@@ -19,6 +19,10 @@ behind the current pixel and uses that instead. Otherwise, it's transparent.
 
 So it essentially overwrites each outline it might see where the white mask color is with the background or wall. Neat!
 
+<img width="818" height="181" alt="image" src="https://github.com/user-attachments/assets/2e47c8c0-5f77-4dc9-a0cb-452d124a7386" />
+
+DON'T STEAL MY BEAUTIFUL ART!!1
+
 # Caveat
 
 I am not a texture or gfx wizard. This was just a quick solution I threw together with a bunch of googling. But it works!
