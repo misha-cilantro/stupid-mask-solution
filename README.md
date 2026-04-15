@@ -2,6 +2,7 @@
 
 You have a game with guys in it. The guys have transparent bodies. It looks bad:
 <img width="761" height="232" alt="image" src="https://github.com/user-attachments/assets/fc2e437d-3767-4f08-888f-d5889ed40f55" />
+(Not my art. See post: https://www.reddit.com/r/godot/comments/1sllal0/how_to_mask_sprites_which_only_consist_of_an/)
 
 The obvious solution is to make them not an outline, ie. fill in their little guy bodies. BUT what if you really want
 the background to still come through? (Because why not, stylistic effect etc.)
