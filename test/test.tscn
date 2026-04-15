@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1hbo24gg6tt3"]
+
+[ext_resource type="Texture2D" uid="uid://vff25b5g1aq3" path="res://art/background.png" id="1_8a8pi"]
+[ext_resource type="PackedScene" uid="uid://cxqamemt5h8rq" path="res://guy/guy.tscn" id="1_syuel"]
+
+[node name="Test" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(485, 203)
+texture = ExtResource("1_8a8pi")
+
+[node name="Guy" parent="." instance=ExtResource("1_syuel")]
+position = Vector2(302, 238)
+stopped = true
+
+[node name="Guy2" parent="." instance=ExtResource("1_syuel")]
+z_index = 10
+position = Vector2(319, 260)
+stopped = true

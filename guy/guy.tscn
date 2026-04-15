@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxqamemt5h8rq"]
+
+[ext_resource type="Script" uid="uid://drn8nq107etlu" path="res://guy/guy.gd" id="1_vupqh"]
+[ext_resource type="Texture2D" uid="uid://cmvlahslyy4vu" path="res://art/guy.png" id="2_jtfwu"]
+[ext_resource type="Shader" uid="uid://bm3ns1ft7n0f4" path="res://mask.gdshader" id="3_a17s0"]
+[ext_resource type="Texture2D" uid="uid://dc3clkc1yiuc3" path="res://art/guy_mask.png" id="4_87sjq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vupqh"]
+shader = ExtResource("3_a17s0")
+shader_parameter/filterColor = Color(0.7647059, 0, 0, 1)
+
+[node name="Guy" type="Node2D"]
+script = ExtResource("1_vupqh")
+
+[node name="MaskSprite" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_vupqh")
+texture = ExtResource("4_87sjq")
+
+[node name="GuySprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_jtfwu")
