@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cs84l4l014xiu"]
+[gd_scene load_steps=5 format=3 uid="uid://cs84l4l014xiu"]
 
 [ext_resource type="Script" uid="uid://c358joimdclhu" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://vff25b5g1aq3" path="res://art/background.png" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://cxqamemt5h8rq" path="res://guy/guy.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://b0mh7vc5vlhtl" path="res://art/wall.png" id="3_1bvp3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
@@ -10,6 +11,10 @@ script = ExtResource("1_0xm2m")
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(599, 305)
 texture = ExtResource("2_1bvp3")
+
+[node name="WallSprite" type="Sprite2D" parent="."]
+position = Vector2(340, 186)
+texture = ExtResource("3_1bvp3")
 
 [node name="Guy" parent="." instance=ExtResource("2_h2yge")]
 position = Vector2(579, 133)
